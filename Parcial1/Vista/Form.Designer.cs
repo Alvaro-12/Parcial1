@@ -29,6 +29,7 @@ namespace Parcial1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -50,7 +51,20 @@ namespace Parcial1
             this.TxtEmail = new System.Windows.Forms.TextBox();
             this.BtnEliminar = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.eMPLEADODataSet = new Parcial1.EMPLEADODataSet();
+            this.tblempleadoBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tbl_empleadoTableAdapter = new Parcial1.EMPLEADODataSetTableAdapters.Tbl_empleadoTableAdapter();
+            this.idempleadoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplnombreDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplapellidoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplDUIDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empldirreccionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.empltelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplemailDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.emplcargoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLEADODataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblempleadoBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -217,11 +231,85 @@ namespace Parcial1
             // 
             // dataGridView1
             // 
+            this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.idempleadoDataGridViewTextBoxColumn,
+            this.emplnombreDataGridViewTextBoxColumn,
+            this.emplapellidoDataGridViewTextBoxColumn,
+            this.emplDUIDataGridViewTextBoxColumn,
+            this.empldirreccionDataGridViewTextBoxColumn,
+            this.empltelDataGridViewTextBoxColumn,
+            this.emplemailDataGridViewTextBoxColumn,
+            this.emplcargoDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.tblempleadoBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(36, 350);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(607, 266);
             this.dataGridView1.TabIndex = 20;
+            // 
+            // eMPLEADODataSet
+            // 
+            this.eMPLEADODataSet.DataSetName = "EMPLEADODataSet";
+            this.eMPLEADODataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tblempleadoBindingSource
+            // 
+            this.tblempleadoBindingSource.DataMember = "Tbl_empleado";
+            this.tblempleadoBindingSource.DataSource = this.eMPLEADODataSet;
+            // 
+            // tbl_empleadoTableAdapter
+            // 
+            this.tbl_empleadoTableAdapter.ClearBeforeFill = true;
+            // 
+            // idempleadoDataGridViewTextBoxColumn
+            // 
+            this.idempleadoDataGridViewTextBoxColumn.DataPropertyName = "Id_empleado";
+            this.idempleadoDataGridViewTextBoxColumn.HeaderText = "Id_empleado";
+            this.idempleadoDataGridViewTextBoxColumn.Name = "idempleadoDataGridViewTextBoxColumn";
+            this.idempleadoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // emplnombreDataGridViewTextBoxColumn
+            // 
+            this.emplnombreDataGridViewTextBoxColumn.DataPropertyName = "Empl_nombre";
+            this.emplnombreDataGridViewTextBoxColumn.HeaderText = "Empl_nombre";
+            this.emplnombreDataGridViewTextBoxColumn.Name = "emplnombreDataGridViewTextBoxColumn";
+            // 
+            // emplapellidoDataGridViewTextBoxColumn
+            // 
+            this.emplapellidoDataGridViewTextBoxColumn.DataPropertyName = "Empl_apellido";
+            this.emplapellidoDataGridViewTextBoxColumn.HeaderText = "Empl_apellido";
+            this.emplapellidoDataGridViewTextBoxColumn.Name = "emplapellidoDataGridViewTextBoxColumn";
+            // 
+            // emplDUIDataGridViewTextBoxColumn
+            // 
+            this.emplDUIDataGridViewTextBoxColumn.DataPropertyName = "Empl_DUI";
+            this.emplDUIDataGridViewTextBoxColumn.HeaderText = "Empl_DUI";
+            this.emplDUIDataGridViewTextBoxColumn.Name = "emplDUIDataGridViewTextBoxColumn";
+            // 
+            // empldirreccionDataGridViewTextBoxColumn
+            // 
+            this.empldirreccionDataGridViewTextBoxColumn.DataPropertyName = "Empl_dirreccion";
+            this.empldirreccionDataGridViewTextBoxColumn.HeaderText = "Empl_dirreccion";
+            this.empldirreccionDataGridViewTextBoxColumn.Name = "empldirreccionDataGridViewTextBoxColumn";
+            // 
+            // empltelDataGridViewTextBoxColumn
+            // 
+            this.empltelDataGridViewTextBoxColumn.DataPropertyName = "Empl_tel";
+            this.empltelDataGridViewTextBoxColumn.HeaderText = "Empl_tel";
+            this.empltelDataGridViewTextBoxColumn.Name = "empltelDataGridViewTextBoxColumn";
+            // 
+            // emplemailDataGridViewTextBoxColumn
+            // 
+            this.emplemailDataGridViewTextBoxColumn.DataPropertyName = "Empl_email";
+            this.emplemailDataGridViewTextBoxColumn.HeaderText = "Empl_email";
+            this.emplemailDataGridViewTextBoxColumn.Name = "emplemailDataGridViewTextBoxColumn";
+            // 
+            // emplcargoDataGridViewTextBoxColumn
+            // 
+            this.emplcargoDataGridViewTextBoxColumn.DataPropertyName = "Empl_cargo";
+            this.emplcargoDataGridViewTextBoxColumn.HeaderText = "Empl_cargo";
+            this.emplcargoDataGridViewTextBoxColumn.Name = "emplcargoDataGridViewTextBoxColumn";
             // 
             // Form
             // 
@@ -251,7 +339,10 @@ namespace Parcial1
             this.Controls.Add(this.label1);
             this.Name = "Form";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.eMPLEADODataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblempleadoBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -280,6 +371,17 @@ namespace Parcial1
         private System.Windows.Forms.TextBox TxtEmail;
         private System.Windows.Forms.Button BtnEliminar;
         private System.Windows.Forms.DataGridView dataGridView1;
+        private EMPLEADODataSet eMPLEADODataSet;
+        private System.Windows.Forms.BindingSource tblempleadoBindingSource;
+        private EMPLEADODataSetTableAdapters.Tbl_empleadoTableAdapter tbl_empleadoTableAdapter;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idempleadoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplnombreDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplapellidoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplDUIDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empldirreccionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn empltelDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplemailDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn emplcargoDataGridViewTextBoxColumn;
     }
 }
 

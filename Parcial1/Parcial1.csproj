@@ -56,6 +56,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DAO\ClsEmpleado.cs" />
+    <Compile Include="EMPLEADODataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>EMPLEADODataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="MODEL\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -98,6 +103,17 @@
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
+    <None Include="EMPLEADODataSet.xsc">
+      <DependentUpon>EMPLEADODataSet.xsd</DependentUpon>
+    </None>
+    <None Include="EMPLEADODataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>EMPLEADODataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="EMPLEADODataSet.xss">
+      <DependentUpon>EMPLEADODataSet.xsd</DependentUpon>
+    </None>
     <None Include="MODEL\Model1.edmx.diagram">
       <DependentUpon>Model1.edmx</DependentUpon>
     </None>

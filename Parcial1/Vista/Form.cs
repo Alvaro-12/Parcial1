@@ -21,5 +21,12 @@ namespace Parcial1
         {
 
         }
+
+        private void Form_Load(object sender, EventArgs e)
+        {
+            // TODO: esta línea de código carga datos en la tabla 'eMPLEADODataSet.Tbl_empleado' Puede moverla o quitarla según sea necesario.
+            this.tbl_empleadoTableAdapter.Fill(this.eMPLEADODataSet.Tbl_empleado);
+
+        }
     }
 }

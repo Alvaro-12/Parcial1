@@ -1,0 +1,15 @@
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\Parcial1.exe.config
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\Parcial1.exe
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\Parcial1.pdb
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\EntityFramework.dll
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\EntityFramework.SqlServer.dll
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\EntityFramework.xml
+E:\Documentos\Desktop\github\Parcial1\Parcial1\bin\Debug\EntityFramework.SqlServer.xml
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.csprojAssemblyReference.cache
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.Properties.Resources.resources
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.Form.resources
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.csproj.GenerateResource.cache
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.csproj.CoreCompileInputs.cache
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.csproj.CopyComplete
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.exe
+E:\Documentos\Desktop\github\Parcial1\Parcial1\obj\Debug\Parcial1.pdb
