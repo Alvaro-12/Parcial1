@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Parcial1.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,14 @@ namespace Parcial1
 
         private void BtnEliminar_Click(object sender, EventArgs e)
         {
-
+            ClsEmpleado clsEmpleado = new ClsEmpleado();
+            clsEmpleado.deletusuarios(Convert.ToInt32(Txt.Text));
+            //{
+            //    ClsDUserlist clsDUserlist = new ClsDUserlist();
+            //    clsDUserlist.deletusuarios(Convert.ToInt32(TxtId.Text));
+            //    carga();
+            //    clear();
+            //}
         }
 
         private void Form_Load(object sender, EventArgs e)

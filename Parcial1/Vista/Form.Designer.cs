@@ -243,7 +243,7 @@ namespace Parcial1
             this.emplemailDataGridViewTextBoxColumn,
             this.emplcargoDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.tblempleadoBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(36, 350);
+            this.dataGridView1.Location = new System.Drawing.Point(49, 342);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(607, 266);
             this.dataGridView1.TabIndex = 20;
