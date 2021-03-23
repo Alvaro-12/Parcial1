@@ -16,5 +16,10 @@ namespace Parcial1
         {
             InitializeComponent();
         }
+
+        private void BtnEliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
